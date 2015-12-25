@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="login.test.com.login.GoogleLogin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/LinearLayoutStyle"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            style="@style/laytheout"
+            android:text="Phone"
+            android:textColor="#404040"
+            android:textStyle="bold" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/google_sign_in_phone"
+                style="@style/laytheout"
+                android:inputType="number"
+                app:bootstrapBrand="info"
+                app:bootstrapSize="md"
+                app:roundedCorners="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            style="@style/laytheout"
+            android:text="Password"
+            android:textColor="#404040"
+            android:textStyle="bold" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+
+                android:id="@+id/google_sign_in_password"
+                style="@style/laytheout"
+                android:inputType="textPassword"
+                app:bootstrapBrand="info"
+                app:bootstrapSize="md"
+                app:roundedCorners="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+
+            style="@style/laytheout"
+            android:text="Confirm Password"
+            android:textColor="#404040"
+
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/google_sign_in_confirm_password"
+                style="@style/laytheout"
+                android:inputType="textPassword"
+                app:bootstrapBrand="info"
+                app:bootstrapSize="md"
+                app:roundedCorners="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+
+            android:id="@+id/google_sign_in_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Create"
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+    </LinearLayout>
+
+</LinearLayout>

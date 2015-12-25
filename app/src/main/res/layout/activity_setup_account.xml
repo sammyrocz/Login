@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="login.test.com.login.SetupAccount"
+    android:background="#FFFFFF"
+    >
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:text="NAME "
+
+                    style="@style/laytheout"
+                    android:textColor="#404040"
+                    android:textStyle="bold" />
+
+
+
+                    <com.beardedhen.androidbootstrap.BootstrapEditText
+                        android:id="@+id/edName"
+                        style="@style/laytheout"
+                        android:inputType="text"
+                        app:bootstrapBrand="info"
+                        app:bootstrapSize="md"
+                        app:roundedCorners="true"
+                        />
+
+            </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/LinearLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                style="@style/laytheout"
+
+                                android:text="AGE"
+                                android:textColor="#404040"
+                                android:textStyle="bold" />
+
+
+                            <com.beardedhen.androidbootstrap.BootstrapEditText
+                                android:id="@+id/edAge"
+                                style="@style/laytheout"
+                                android:inputType="number"
+                                app:roundedCorners="true"
+                                app:bootstrapBrand="info"
+                                app:bootstrapSize="md" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/LinearLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                style="@style/laytheout"
+                                android:text="EMAIL"
+                                android:textColor="#404040"
+                                android:textStyle="bold" />
+
+                                 <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                            <com.beardedhen.androidbootstrap.BootstrapEditText
+                                android:id="@+id/edEmail"
+                                style="@style/laytheout"
+                                android:inputType="textEmailAddress"
+                                app:bootstrapBrand="info"
+                                app:bootstrapSize="md"
+                                app:roundedCorners="true"/>
+
+                                             </android.support.design.widget.TextInputLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            style="@style/LinearLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+
+                                style="@style/laytheout"
+                                android:text="PHONE"
+                                android:textColor="#404040"
+
+                                android:textStyle="bold" />
+                 <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                            <com.beardedhen.androidbootstrap.BootstrapEditText
+                                android:id="@+id/edPhone"
+                                style="@style/laytheout"
+                                android:inputType="number"
+                                app:bootstrapBrand="info"
+                                app:bootstrapSize="md" app:roundedCorners="true"/>
+                 </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            style="@style/LinearLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+
+                                style="@style/laytheout"
+                                android:text="PASSWORD"
+                                android:textColor="#404040"
+                                android:textStyle="bold" />
+
+                 <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                            <com.beardedhen.androidbootstrap.BootstrapEditText
+                                android:id="@+id/edPass"
+                                style="@style/laytheout"
+                                android:inputType="textPassword"
+                                app:bootstrapBrand="info"
+                                app:bootstrapSize="md"
+                                app:roundedCorners="true"/>
+
+                 </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/btncreate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Create"
+                    app:bootstrapBrand="primary"
+                    app:bootstrapSize="lg"
+                    app:buttonMode="regular"
+                    app:roundedCorners="true"
+                    app:showOutline="false" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
